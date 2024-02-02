@@ -1,3 +1,95 @@
-body{
-    background-color: silver;
+body, h1, h2, p, table, form {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* Add some spacing between form elements */
+  input:not([type="submit"]) {
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+/*
+table tr td{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
+
+.update{
+    background-color: rgb(4, 60, 4);
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    color: white;
+}
+.delete{
+    background-color: rgb(248, 16, 16);
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 10px;
+    width: 100px;
+    padding: 10px;
+    color: white;
+} */

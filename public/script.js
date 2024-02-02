@@ -1,27 +1,13 @@
-// var btn = document.getElementById("SubmitBtn");
+let usPassword = document.getElementById('usPassword');
+let usName = document.getElementById('usName');
+let usEmail = document.getElementById('usEmail');
 
-// btn.addEventListener("click", HandelClick);
-
-// function HandelClick(){
-//     let nameInput = document.getElementById("name");
-//     let ageInput = document.getElementById("age");
-
-//     console.log(nameInput.value, ageInput.value);
-// }
-
-    let nameInput = document.getElementById("name").value
-    let passwordInput = document.getElementById("password").value
-    let emailInput = document.getElementById("email").value
-
-
-
-    function SendData(){
-
-    var response = fetch('http://localhost:3000/addName', {
+function getVal() {
+    var response =  fetch("http://localhost:3000/addName", {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json;charset=utf-8'
+            "Content-Type": "application/json"
         },
-        body: JSON.stringify({name : nameInput, password : passwordInput, email : emailInput})
-    });
+        body: JSON.stringify({ name: usName.value, password: usPassword.value, email:usEmail.value })
+    })
 }
